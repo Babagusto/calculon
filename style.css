@@ -1,7 +1,7 @@
 #calculator {
     display: flex;
     border-style: solid;
-    height: 400px;
+    height: 450px;
     width: 400px;
     flex-direction: column;
     padding: 0px;
@@ -10,14 +10,22 @@
 #display {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     height: 190px;
     width: auto;
     border-style: solid;
     margin: 20px;
     font-size: 55px;
     justify-content: left;
-    align-items: flex-end;
+    padding: 10px;
+    
+}
+
+#previous-display{
+    width: 40px;
+    font-size: 45px;
+    padding-bottom: 10px;
+    height: 50px;
 }
 
 .button {
@@ -32,6 +40,26 @@
     margin: 2px;
     
 }
+
+
+.numbers {
+    display:flex;
+    border:1px;
+    border-style: solid;
+    font-size: 55px;
+    height: 50px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    transition-duration: 0.4s;
+    
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
 
 #allNumbers {
     display:flex;
@@ -48,13 +76,11 @@
     width: 150px;
     margin: 0px;
     align-content: flex-start;
-    
 }
 
 #allButtons {
     display: flex;
     padding: 25px;
-  
 }
 
 #equal {
@@ -68,3 +94,18 @@
     align-items: center;
     margin: 2px;
 }
+
+#clear {
+    display:flex;
+    border:1px;
+    border-style: solid;
+    font-size: 55px;
+    height: 50px;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    transition-duration: 0.4s;
+}
+
+
